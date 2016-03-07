@@ -10,7 +10,7 @@ def request_url(method_name, parameters, access_token=False):
 		method_name=method_name, api_v=api_v, parameters=parameters)
 
 	if access_token:
-		req_url = '{}&access_token={token}'.format(req_url, token=random.choice(token))
+		req_url = '{}&access_token={token}'.format(req_url, token=token)
 
 	return req_url
 
